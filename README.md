@@ -27,16 +27,9 @@ Make sure to check "Add Python to PATH" during installation.
     cd finding-psychological-instability
 
 # Repsoitory 
-    <img width="771" height="244" alt="image" src="https://github.com/user-attachments/assets/08c186a3-8fe4-412f-a463-626815d7ed49" />
-    <img width="813" height="200" alt="image" src="https://github.com/user-attachments/assets/016d2348-e1b4-423b-a26e-6ff4748e19ed" />
-    <img width="824" height="297" alt="image" src="https://github.com/user-attachments/assets/eceb188f-5569-4dfa-8073-328a72092398" />
-
-The folder should contain the first image folder ignore the venv folder
-The .idea should have the files present in the second image 
-The Database folder should have the files present in the second image
-The Pyschological_datasets.txt in the main folder
-The finding_psychological_instability folder should have the files present in the repo as it is.
-
+ <img width="518" height="483" alt="image" src="https://github.com/user-attachments/assets/77409ac2-3cff-4bfc-8ba3-4dcc7f0bde95" />
+ 
+- The files provided with the commit Database should be placed as present in the image
 
 
 # 4. Install Python Dependencies
@@ -63,8 +56,8 @@ The finding_psychological_instability folder should have the files present in th
 
 
 # 5. Upload the Dataset
-Place the Psychological_DataSets.xlsx file into the appropriate folder.
-Ensure it's read by your Django app as expected.
+- Place the Psychological_DataSets.xlsx file into the appropriate folder.                                                
+- Ensure it's read by your Django app as expected.
 
 # 6. Run the Server
 **Navigate to the Django project folder (where manage.py exists)**
@@ -75,7 +68,7 @@ Ensure it's read by your Django app as expected.
     python manage.py runserver
 
 **Open in browser:**
-    http://127.0.0.1:8000
+    - http://127.0.0.1:8000
 
 **Login for Service Provider (if applicable):**
 
