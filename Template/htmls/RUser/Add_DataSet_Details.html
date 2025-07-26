@@ -1,0 +1,111 @@
+{% extends 'RUser/design.html' %}
+{% block userblock %}
+
+
+<link rel="icon" href="images/icon.png" type="image/x-icon" />
+
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+
+
+
+		<style>
+			body {background-color:#FFFFFF;}
+			.container-fluid {padding:50px;}
+			.container{background-color:white;padding:50px;}
+			#title{font-family: 'Fredoka One', cursive;
+}
+			.text-uppercase{
+			font-family: 'Righteous', cursive;
+
+			}
+			input,textarea{
+			font-family:Aldrich;
+			font-size:15px;
+			}
+        .style5 {color: #FF0000; font-weight: bold; font-style: italic; }
+        .style9 {color: #FFFFFF}
+        .style10 {font-style: italic; font-weight: bold; color: #FFFFFF; }
+        </style>
+
+	<body>
+	<div class="container-fluid">
+		<div class="container">
+
+			<div class="row">
+				<div class="col-md-5">
+ 					<form action="{% url 'Add_DataSet_Details' %}" method="post" enctype="multipart/form-data">
+            {% csrf_token %}<span class="style5">Browse Psychological Data Set</span>
+              <input type="file"
+                   title="Upload excel file"
+                   name="excel_file"
+                   style="border: 1px solid black; padding: 5px;"
+                   required="required">
+            <p>
+            <input type="submit"
+                   value="Upload"
+                   style="border: 1px solid green; padding:5px; border-radius: 2px; cursor: pointer;">
+        </form>
+
+        <p></p>
+
+
+        <hr><fieldset><form role="form" method="POST" >
+                    <table border="5" bordercolor="#FF00FF">
+                      <tr><td bgcolor="#FF0000"><span class="style9 style5"><em><strong> User Name</strong></em></span></td>
+                      <td bgcolor="#FF0000"><span class="style9 style5"><em><strong>Age</strong></em></span></td>
+                      <td bgcolor="#FF0000"><span class="style9 style5"><em><strong>Gender</strong></em></span></td>
+                      <td bgcolor="#FF0000"><span class="style9 style5"><em><strong>Country</strong></em></span></td>
+                          <td bgcolor="#FF0000"><span class="style9 style5"><em><strong>State</strong></em></span></td>
+                          <td bgcolor="#FF0000"><span class="style9 style5"><em><strong>Self Employeed</strong></em></span></td>
+                          <td bgcolor="#FF0000"><span class="style9 style5"><em><strong>Family History</strong></em></span></td>
+                          <td bgcolor="#FF0000"><span class="style9 style5"><em><strong>Treatment</strong></em></span></td>
+                          <td bgcolor="#FF0000"><span class="style9 style5"><em><strong>Work Interferes</strong></em></span></td>
+                          <td bgcolor="#FF0000"><span class="style9 style5"><em><strong>No Of Employees</strong></em></span></td>
+                          <td bgcolor="#FF0000"><span class="style10">Remote Network</span></td>
+                          <td bgcolor="#FF0000"><span class="style10">technical_company</span></td>
+                          <td bgcolor="#FF0000"><span class="style10">Benefits</span></td>
+                           <td bgcolor="#FF0000"><span class="style10">Care Options</span></td>
+                          <td bgcolor="#FF0000"><span class="style10">Welness Program</span></td>
+                          <td bgcolor="#FF0000"><span class="style10">seek_help</span></td>
+                          <td bgcolor="#FF0000"><span class="style10">Anonymity</span></td>
+                          <td bgcolor="#FF0000"><span class="style10">Leave</span></td>
+                          <td bgcolor="#FF0000"><span class="style10">Mental Health Consequence</span></td>
+                          <td bgcolor="#FF0000"><span class="style10">Physical Health Consequence</span></td>
+                          <td bgcolor="#FF0000"><span class="style10">Co Workers</span></td>
+                          <td bgcolor="#FF0000"><span class="style10">Supervisor</span></td>
+                          <td bgcolor="#FF0000"><span class="style10">Mental Health Interview</span></td>
+                          <td bgcolor="#FF0000"><span class="style10">Physical Health Interview</span></td>
+                          <td bgcolor="#FF0000"><span class="style10">Nental Health</span></td>
+                          <td bgcolor="#FF0000"><span class="style10">Obs Consequence</span></td>
+                          <td bgcolor="#FF0000"><span class="style10">Remarks or comments</span></td>
+                          <td bgcolor="#FF0000"><span class="style10">Dislikes</span></td>
+                          <td bgcolor="#FF0000"><span class="style10">Likes</span></td>
+                      </tr>
+
+
+        {% for row in excel_data %}
+<tr>
+            {% for cell in row %}
+                     <td>   {{ cell }}&nbsp;&nbsp&nbsp;&nbsp;
+            {% endfor %}
+
+            <br></td></tr>
+        {% endfor %}
+                  </table>
+
+{{obj}}
+
+						</fieldset>
+					</form>
+				</div>
+
+
+				<div class="col-md-2">
+					<!-------null------>
+				</div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

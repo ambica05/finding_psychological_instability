@@ -1,0 +1,142 @@
+{% extends 'SProvider/design1.html' %}
+{% block researchblock %}
+
+
+<link rel="icon" href="images/icon.png" type="image/x-icon" />
+
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+
+
+
+		<style>
+			body {background-color:#000000;}
+			.container-fluid {padding:50px;}
+			.container{background-color:white;padding:50px;   }
+			#title{font-family: 'Fredoka One', cursive;
+}
+			.text-uppercase{
+			font-family: 'Righteous', cursive;
+
+			}
+			.tweettext{
+
+    border: 2px solid yellowgreen;
+    width: 1104px;
+    height: 442px;
+    overflow: scroll;
+    background-color:;
+}
+		.style1 {
+	color: #FF0000;
+	font-weight: bold;
+}
+.style4 {color: #FFFF00; font-weight: bold; }
+        .style5 {color: #FFFF00}
+        </style>
+
+	<body>
+	<div class="container-fluid">
+		<div class="container">
+
+			<div class="row">
+				<div class="col-md-15">
+<form role="form" method="POST" >
+						{% csrf_token %}
+						<fieldset>
+							<marquee behavior="alternate">VIEW  DEPRESSED ACCURACY::</span> {{count}}</marquee>
+							<p class="text-uppercase pull-center style1">VIEW ALL  DEPRESSED PSYCHOLOGY DETAILS BASED ON DATASETS  !!! </p>
+                            <hr>
+                            <div class="tweettext">
+                                 <table border="5" bordercolor="#FF00FF">
+                      <tr><td bgcolor="#FF0000"><span class="style8 style5"> User Name</span></td>
+                      <td bgcolor="#FF0000"><span class="style8 style5">Age</span></td>
+                      <td bgcolor="#FF0000"><span class="style8 style5">Gender</span></td>
+                      <td bgcolor="#FF0000"><span class="style8 style5">Country</span></td>
+                          <td bgcolor="#FF0000"><span class="style8 style5">State</span></td>
+                          <td bgcolor="#FF0000"><span class="style8 style5">Self Employeed</span></td>
+                          <td bgcolor="#FF0000"><span class="style8 style5">Family History</span></td>
+                          <td bgcolor="#FF0000"><span class="style8 style5">Treatment</span></td>
+                          <td bgcolor="#FF0000"><span class="style8 style5">Work Interferes</span></td>
+                          <td bgcolor="#FF0000"><span class="style8 style5">No Of Employees</span></td>
+                          <td bgcolor="#FF0000"><span class="style8">Remote Network</span></td>
+                          <td bgcolor="#FF0000"><span class="style8">technical_company</span></td>
+                          <td bgcolor="#FF0000"><span class="style8">Benefits</span></td>
+                           <td bgcolor="#FF0000"><span class="style8">Care Options</span></td>
+                          <td bgcolor="#FF0000"><span class="style8">Welness Program</span></td>
+                          <td bgcolor="#FF0000"><span class="style8">seek_help</span></td>
+                          <td bgcolor="#FF0000"><span class="style8">Anonymity</span></td>
+                          <td bgcolor="#FF0000"><span class="style8">Leave</span></td>
+                          <td bgcolor="#FF0000"><span class="style8">Mental Health Consequence</span></td>
+                          <td bgcolor="#FF0000"><span class="style8">Physical Health Consequence</span></td>
+                          <td bgcolor="#FF0000"><span class="style8">Co Workers</span></td>
+                          <td bgcolor="#FF0000"><span class="style8">Supervisor</span></td>
+                          <td bgcolor="#FF0000"><span class="style8">Mental Health Interview</span></td>
+                          <td bgcolor="#FF0000"><span class="style8">Physical Health Interview</span></td>
+                          <td bgcolor="#FF0000"><span class="style8">Nental Health</span></td>
+                          <td bgcolor="#FF0000"><span class="style8">Obs Consequence</span></td>
+                          <td bgcolor="#FF0000"><span class="style8">Remarks or comments</span></td>
+                          <td bgcolor="#FF0000"><span class="style8">Dislikes</span></td>
+                          <td bgcolor="#FF0000"><span class="style8">Likes</span></td>
+                          <td bgcolor="#FF0000"><span class="style8">Psychological Type</span></td>
+
+
+                      </tr>
+
+                            {% for object in objs %}
+                      <tr>
+
+                          <td style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.names}}</div></td>
+
+<td style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.age}}</div></td>
+<td style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.gender}}</div></td>
+<td style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.country}}</div></td>
+<td style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.state}}</div></td>
+<td style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.self_employeed}}</div></td>
+<td style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.family_history}}</div></td>
+<td style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.treatment}}</div></td>
+<td style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.work_interferes}}</div></td>
+<td style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.No_of_employees}}</div></td>
+<td style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.remote_network}}</div></td>
+<td style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.technical_company}}</div></td>
+<td style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.benefits}}</div></td>
+<td style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.care_options}}</div></td>
+<td style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.welness_program}}</div></td>
+<td style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.seek_help}}</div></td>
+<td style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.anonymity}}</div></td>
+<td style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.leave1}}</div></td>
+<td style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.mental_health_consequence}}</div></td>
+<td style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.physical_health_consequence}}</div></td>
+<td style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.co_workers}}</div></td>
+<td style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.supervisor}}</div></td>
+<td style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.mental_health_interview}}</div></td>
+<td style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.physical_health_interview}}</div></td>
+<td style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.mental_health}}</div></td>
+<td style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.obs_consequence}}</div></td>
+<td style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.Remarks_or_comments}}</div></td>
+<td style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.dislikes}}</div></td>
+<td style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.likes}}</div></td>
+                          <td style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.psycho_type}}</div></td>
+
+                                  </tr>
+                                        {% endfor %}
+                      </table>
+
+                            </div>
+
+
+
+
+						</fieldset>
+					</form>
+				</div>
+
+				<div class="col-md-2">
+					<!-------null------>
+				</div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+    <tr>
