@@ -29,7 +29,7 @@ Make sure to check "Add Python to PATH" during installation.
 # Repsoitory 
  <img width="518" height="483" alt="image" src="https://github.com/user-attachments/assets/77409ac2-3cff-4bfc-8ba3-4dcc7f0bde95" />
  
-- The files provided with the commit Database should be placed as present in the image
+- The files provided with the commit **The database is uploaded** should be placed as present in the image
 
 
 # 4. Install Python Dependencies
