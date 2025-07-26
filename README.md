@@ -26,6 +26,19 @@ Make sure to check "Add Python to PATH" during installation.
     git clone https://github.com/YOUR_USERNAME/finding-psychological-instability.git
     cd finding-psychological-instability
 
+# Repsoitory 
+    <img width="771" height="244" alt="image" src="https://github.com/user-attachments/assets/08c186a3-8fe4-412f-a463-626815d7ed49" />
+    <img width="813" height="200" alt="image" src="https://github.com/user-attachments/assets/016d2348-e1b4-423b-a26e-6ff4748e19ed" />
+    <img width="824" height="297" alt="image" src="https://github.com/user-attachments/assets/eceb188f-5569-4dfa-8073-328a72092398" />
+
+The folder should contain the first image folder ignore the venv folder
+The .idea should have the files present in the second image 
+The Database folder should have the files present in the second image
+The Pyschological_datasets.txt in the main folder
+The finding_psychological_instability folder should have the files present in the repo as it is.
+
+
+
 # 4. Install Python Dependencies
     Create a virtual environment
         py -3.7 -m venv venv
