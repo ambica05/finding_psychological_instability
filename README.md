@@ -62,11 +62,13 @@ Ensure it's read by your Django app as expected.
     python manage.py runserver
 
 **Open in browser:**
-http://127.0.0.1:8000
+    http://127.0.0.1:8000
 
 **Login for Service Provider (if applicable):**
-    Username: SProvider
-    Password: SProvider
+
+    Username:     SProvider
+    Password:     SProvider
+    
     Notes
     - This app requires MySQL (via XAMPP), not SQLite
     - Data is classified using rules in views.py, not trained ML models
